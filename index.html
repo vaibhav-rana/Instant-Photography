@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instant Photography</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg bg-color navbar-dark" id="nav">
+        <span class="navbar-brand font-color mx-5 logo-color" href="#"
+          >Instant</span
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon primary-color"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse font-color"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto mr-5 text-center">
+            <li class="nav-item active">
+              <a class="nav-link font-color" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-color" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-color" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-color" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="center_div">
+        <h1>Instant</h1>
+        <p>Photography</p>
+      </div>
+    </header>
+    <section id="about" class="text-center bg-color">
+      <h2>Welcome</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis amet
+        dolorum, praesentium necessitatibus ullam culpa veritatis. Voluptatem
+        nostrum quibusdam veritatis officiis, voluptatum neque expedita?
+        Accusamus voluptatum est doloremque inventore officiis placeat aut
+        eligendi possimus cupiditate asperiores. Officiis assumenda eum soluta.
+        Velit fugiat eaque ipsum quia nisi unde repellat, omnis at porro ipsam
+        eos obcaecati quam sapiente aut accusantium nobis tenetur tempore nemo
+        totam voluptas provident debitis. Impedit quisquam labore ratione!
+        Sequi, minus, aliquid inventore, fugit officiis minima modi fugiat
+        expedita quidem ab tenetur excepturi! Ex dolor possimus aliquid
+        voluptates iure. Amet, fugiat. Ad quibusdam laudantium ullam aliquid
+        laboriosam molestiae esse?
+      </p>
+      <button class="btn">Read more</button>
+    </section>
+    <section id="services">
+      <div class="row m-0">
+        <div class="col-6 bg-catalog">
+          <h3>Catalog Photography</h3>
+        </div>
+        <div class="col-6 bg-food">
+          <h3>Food Photography</h3>
+        </div>
+      </div>
+      <div class="row m-0">
+        <div class="col-6 bg-wedding">
+          <h3>Wedding Photography</h3>
+        </div>
+        <div class="col-6 bg-potrait">
+          <h3>Portrait Photography</h3>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-color text-center primary-color">
+      <h2>Contact</h2>
+      <form action="" autocomplete="off">
+        <input type="text" placeholder="name" />
+        <input type="email" placeholder="email" />
+        <input type="text" placeholder="phone no." maxlength="10" />
+        <textarea placeholder="message" cols="30" rows="2"></textarea>
+        <button class="btn">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <p class="text-center font-color m-0 bg-color">
+        Copyright &copy; 2020 All rights reserved
+      </p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("nav");
+
+      var sticky = header.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>

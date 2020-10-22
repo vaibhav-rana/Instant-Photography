@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+.font-color {
+  color: #ddd;
+}
+
+.bg-color {
+  background-color: #1b1a18;
+}
+
+.font-hover-color {
+  color: #c2beb7;
+}
+
+.logo-color {
+  color: #f79f1f;
+}
+
+.primary-color {
+  color: #fff;
+}
+
+a:hover {
+  color: #c2beb7;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #f79f1f;
+  width: 20%;
+  margin: 30px auto;
+}
+
+#header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7))), url("../images/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../images/header.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#header .center_div {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#header .center_div h1 {
+  letter-spacing: 20px;
+}
+
+#header .center_div p {
+  letter-spacing: 10px;
+}
+
+#header .center_div::before,
+#header .center_div::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #f79f1f;
+  width: 80%;
+  margin: 20px auto;
+  margin-top: 20px;
+}
+
+#about {
+  color: #fff;
+  padding: 100px 50px;
+}
+
+#about p {
+  padding: 20px 80px;
+}
+
+#about button {
+  margin-top: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding: 5px 20px;
+}
+
+#about button:hover {
+  color: #f79f1f;
+  border: 1px solid #f79f1f;
+}
+
+#services {
+  z-index: 1;
+}
+
+#services .bg-catalog {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.747)), to(rgba(0, 0, 0, 0.747))), url("../images/1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.747)), url("../images/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  padding: 0px;
+}
+
+#services .bg-food {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.747)), to(rgba(0, 0, 0, 0.747))), url("../images/2.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.747)), url("../images/2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  padding: 0px;
+}
+
+#services .bg-wedding {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.747)), to(rgba(0, 0, 0, 0.747))), url("../images/3.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.747)), url("../images/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  padding: 0px;
+}
+
+#services .bg-potrait {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.747)), to(rgba(0, 0, 0, 0.747))), url("../images/4.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.747)), url("../images/4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  padding: 0px;
+}
+
+#services h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vh;
+  margin: 0;
+}
+
+#services h3::before,
+#services h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #f79f1f;
+  width: 30%;
+  margin: 40px auto;
+  margin-top: 40px;
+}
+
+#contact {
+  padding: 100px 50px;
+}
+
+#contact h2 {
+  margin: 0;
+}
+
+#contact input,
+#contact textarea {
+  outline: none;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  width: 40%;
+  border-bottom: 2px solid #f79f1f !important;
+  background-color: transparent;
+  color: #ddd;
+  border: none;
+  padding: 5px;
+}
+
+#contact button {
+  margin-top: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding: 5px 20px;
+}
+
+#contact button:hover {
+  color: #f79f1f;
+  border: 1px solid #f79f1f;
+}
+/*# sourceMappingURL=style.css.map */
