@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
-  
+
   font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
 }
@@ -170,4 +170,83 @@ h2::after {
     color: $logo-color;
     border: 1px solid $logo-color;
   }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h2::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: $logo-color;
+    width: 50%;
+    margin: 30px auto;
+  }
+  #header {
+    height: 90vh;
+
+    .center_div {
+      h1 {
+        letter-spacing: 15px;
+      }
+      p {
+        letter-spacing: 8px;
+      }
+    }
+  }
+  #about {
+    padding: 0px auto;
+
+    p {
+      padding: 15px 60px;
+      font-size: 15px;
+    }
+  }
+  #services {
+    z-index: 1;
+    .bg-catalog {
+      height: 40vh;
+    }
+    .bg-food {
+      height: 40vh;
+    }
+    .bg-wedding {
+      height: 40vh;
+    }
+    .bg-potrait {
+      height: 40vh;
+    }
+    h3 {
+      height: 40vh;
+      font-size: 20px;
+    }
+    h3::before,
+    h3::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: $logo-color;
+      width: 30%;
+      margin: 40px auto;
+      margin-top: 40px;
+    }
+  }
+  #contact {
+    h2 {
+      margin: 0;
+    }
+    input,
+    textarea {
+      margin: 20px auto;
+
+      width: 60%;
+
+      padding: 3px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
 }

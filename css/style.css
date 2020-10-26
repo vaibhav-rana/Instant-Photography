@@ -222,4 +222,72 @@ h2::after {
   color: #f79f1f;
   border: 1px solid #f79f1f;
 }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h2::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #f79f1f;
+    width: 50%;
+    margin: 30px auto;
+  }
+  #header {
+    height: 90vh;
+  }
+  #header .center_div h1 {
+    letter-spacing: 15px;
+  }
+  #header .center_div p {
+    letter-spacing: 8px;
+  }
+  #about {
+    padding: 0px auto;
+  }
+  #about p {
+    padding: 15px 60px;
+    font-size: 15px;
+  }
+  #services {
+    z-index: 1;
+  }
+  #services .bg-catalog {
+    height: 40vh;
+  }
+  #services .bg-food {
+    height: 40vh;
+  }
+  #services .bg-wedding {
+    height: 40vh;
+  }
+  #services .bg-potrait {
+    height: 40vh;
+  }
+  #services h3 {
+    height: 40vh;
+    font-size: 20px;
+  }
+  #services h3::before,
+  #services h3::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #f79f1f;
+    width: 30%;
+    margin: 40px auto;
+    margin-top: 40px;
+  }
+  #contact h2 {
+    margin: 0;
+  }
+  #contact input,
+  #contact textarea {
+    margin: 20px auto;
+    width: 60%;
+    padding: 3px;
+  }
+  #contact button {
+    margin-top: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
